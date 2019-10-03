@@ -15,6 +15,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -34,6 +39,33 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px 18px 30px;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -100,7 +132,7 @@ img {
 .navbar__button {
   margin-left: 30px;
   font-size: 13px;
-  font-family: 'Museo Sans Bold'б sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -111,7 +143,7 @@ img {
   text-decoration: none;
   margin-top: 8px;
   letter-spacing: .5px;
-  font-family: 'Museo Sans Bold'б sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -141,7 +173,7 @@ img {
     font-size: 10px;
     font-weight: 400;
     padding: 15px 26px 14px 26px;
-    font-family: 'Museo Sans Bold'б sans-serif;
+    font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
   }
   .navbar__logo {
@@ -152,9 +184,7 @@ img {
 /*Стили для главного экрана*/
 .hero {
   padding: 50px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
@@ -166,7 +196,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  padding-right: 130px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -175,7 +205,7 @@ img {
   line-height: 55px;
   margin-bottom: 40px;
   letter-spacing: .9px;
-  font-family: 'Museo Sans Bold'б sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -183,7 +213,7 @@ img {
   display: inline-block;
   margin-bottom: 70px;
   letter-spacing: 2.4px;
-  font-family: 'Museo Sans Bold'б sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -200,6 +230,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -269,7 +303,7 @@ img {
     line-height: 30px;
     margin-bottom: 7px;
     letter-spacing: 1.2px;
-    font-family: 'Museo Sans Bold'б sans-serif;
+    font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
     font-size: 23px;
   }
@@ -277,12 +311,84 @@ img {
     width: 90%;
     margin-left: 5px;
     letter-spacing: 0.2px;
-    font-family: 'Museo Sans Bold'б sans-serif;
+    font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
   }
   .hero-list__text {
     max-width: 200px;
     line-height: 18px;
+  }
+}
+
+/*Стили для блока offer*/
+.offer {
+  background: url(../img/offer/offer-bg.jpg) no-repeat;
+  background-size: contain;
+  background-position: center right;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  width: 240px;
+  margin-bottom: 30px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
