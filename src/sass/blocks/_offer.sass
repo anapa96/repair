@@ -5,7 +5,7 @@
   position: relative
   &:before
     content: ''
-    width: 50%
+    width: 49.8%
     height: 100%
     position: absolute
     background-color: #fff
@@ -18,10 +18,11 @@
   &__title
     max-width: 360px
     line-height: 35px
-    margin-bottom: 24px
+    margin-bottom: 20px
   &__subtitle
     max-width: 250px
-    margin-bottom: 30px
+    line-height: 20px
+    margin-bottom: 29px
   &__input
     width: 240px
     margin-bottom: 30px
@@ -30,6 +31,21 @@
   &__button
     width: 100%  
     min-height: 70px
+    margin-bottom: 25px
+  &__feedback
+    display: flex
+    justify-content: space-between
+    font-size: 15px
+    line-height: 24px
+    padding-right: 10px
+    &-item
+      display: block
+      max-width: 230px
+    &-number
+      display: block;
+      text-decoration: none
+      color: $text-color
+      +bold
 @media (max-width: 1200px)
   .offer
     background-size: cover
@@ -38,10 +54,35 @@
       margin-bottom: 10px
     &__button
       font-size: 13px
+    &__feedback
+      direction: column
+      &-item
+        display: block
+        max-width: 100%
 @media (max-width: 768px)
   .offer
     background: #fff
     &-block
       width: 100%
       padding-right: 0
+    &__title
+      display: block
+      max-width: 265px
+      line-height: 22px
+      margin-bottom: 16px
+    &__subtitle
+      line-height: 18px
+      margin-bottom: 25px
+    &__button
+      font-size: 14px
+      padding: 0 40px 0 40px
+      margin-bottom: 22px
+    &__feedback
+      flex-direction: column
+      padding-left: 6px
+      &-item
+        &:first-child
+          margin-bottom: 7px
+
+
   
