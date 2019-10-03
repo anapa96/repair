@@ -11,10 +11,12 @@
       font-weight: 700
       line-height: 55px
       margin-bottom: 40px
+      letter-spacing: .9px
       +bold
     &__subtitle
       display: inline-block
       margin-bottom: 70px
+      letter-spacing: 2.4px
       +bold
   &-list
     margin: 0
@@ -33,7 +35,9 @@
       border-radius: 50%
       margin-right: 30px
     &__text
-      max-width: 300px
+      max-width: 250px
+      font-size: 14px
+      line-height: 24px
 @media (max-width: 1200px)
   .hero
     &-block
@@ -59,16 +63,26 @@
         font-size: 12px
       &__image
         margin-right: 15px
-@media (max-width: 768px)
+@media (max-width: 320px)
   .hero
-    padding-top: 30px
+    padding-top: 32px
     &-text
       &__title 
         line-height: 30px
-        margin-bottom: 10px
+        margin-bottom: 7px
+        letter-spacing: 1.2px
+        +bold
+        font-size: 23px
+      &__subtitle
+        width: 90%
+        margin-left: 5px
+        letter-spacing: 0.2px
+        +bold
     &-list
       &__text
         max-width: 200px
+        line-height: 18px
+
 
  
   
