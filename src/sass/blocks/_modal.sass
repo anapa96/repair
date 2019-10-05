@@ -1,0 +1,69 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    max-width: 570px
+    width: 90%
+    min-width: 200px
+    background-color: #fff
+    padding: 43px 100px 76px 100px
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+    &__title
+      font-size: 22px
+      line-height: 33px
+      text-align: center
+      +bold
+      margin-bottom: 48px
+      margin-left: 5px 
+    &__subtitle
+      display: block
+      text-align: center
+      margin-bottom: 50px
+      margin-left: 5px 
+    &__form
+    &__input
+      width: 100%
+      padding-left: 25px
+      margin-bottom: 30px
+      &:first-child
+        margin-bottom: 18px
+    &__button
+      padding: 26px 0 26px 2px
+      margin-bottom: 30px
+      width: 100%
+      font-size: 16px
+      font-weight: 400
+      +bold
+    &__feedback
+      &-text
+        display: block
+        max-width: 275px
+        margin: 0 auto
+        text-align: center
+        font-size: 15px
+        line-height: 20px
+      &-number
+        display: block
+        margin-top: 10px
+        font-size: 24px
+        font-weight: 400
+        line-height: 24px
+        +bold
+        text-decoration: none
+        color: $text-color
+      
+
+
+    
