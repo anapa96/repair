@@ -1,17 +1,20 @@
-var button = document.querySelector('#button');
-var modal= document.querySelector('#modal');
-var close= document.querySelector('#close');
+const button = document.querySelector('#button');
+const modal= document.querySelector('#modal');
+const close= document.querySelector('#close');
 
 button.addEventListener('click', function(){
-  modal.classList.add('modal_active');
-  // первый аргумент - функция
-  function second_passed() {
+  modal.classList.toggle('modal_active');
+  setTimeout(function(){
+    modal.classList.toggle('modal_active');
+  }, 5000);
+
+ /* function second_passed() {
     modal.classList.remove('modal_active');
   }
-  setTimeout(second_passed, 5000);
+  setTimeout(second_passed, 5000);*/
 });
 
 close.addEventListener('click', function(){
-  modal.classList.remove('modal_active');
+  modal.classList.toggle('modal_active');
 });
 
