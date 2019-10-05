@@ -561,4 +561,58 @@ input:focus {
   text-decoration: none;
   color: #333333;
 }
+
+@media (max-width: 1200px) {
+  .modal-dialog {
+    max-width: 450px;
+    padding: 20px;
+  }
+  .modal-dialog__title {
+    font-size: 23px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+  .modal-dialog__subtitle {
+    margin-bottom: 30px;
+  }
+  .modal-dialog__input {
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+  .modal-dialog__feedback-text {
+    width: 100%;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 80%;
+    padding: 5%;
+  }
+  .modal-dialog__title {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .modal-dialog__subtitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .modal-dialog__input {
+    padding: 15px;
+  }
+  .modal-dialog__button {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .modal-dialog__feedback-text {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .modal-dialog__feedback-number {
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

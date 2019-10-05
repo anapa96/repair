@@ -63,6 +63,53 @@
         +bold
         text-decoration: none
         color: $text-color
+
+@media ( max-width: 1200px )
+  .modal 
+    &-dialog
+      max-width: 450px
+      padding: 20px
+      &__title
+        font-size: 23px
+        line-height: 25px
+        margin-bottom: 25px
+      &__subtitle
+        margin-bottom: 30px
+      &__input
+        width: 100%
+        padding-left: 25px
+        margin-bottom: 20px
+      &__feedback
+        &-text
+          width: 100%
+          line-height: 15px
+@media ( max-width: 768px )
+  .modal 
+    &-dialog
+      max-width: 80%
+      padding: 5%
+      &__title
+        font-size: 15px
+        line-height: 20px
+        margin-bottom: 15px
+      &__subtitle
+         font-size: 12px
+         margin-bottom: 20px
+      &__input
+        padding: 15px
+      &__button
+        padding: 15px
+        margin-bottom: 20px
+      &__feedback
+        &-text
+          font-size: 10px
+          line-height: 10px
+        &-number
+          font-size: 18px
+    
+
+
+  
       
 
 
