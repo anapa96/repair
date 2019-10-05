@@ -48,6 +48,14 @@ img {
   cursor: pointer;
 }
 
+.button:active {
+  outline: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
 .section {
   padding: 50px 0;
 }
