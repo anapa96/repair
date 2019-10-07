@@ -13,6 +13,18 @@ img
   border: none
   padding: 17px 30px 17px 30px 
   +bold
+  &-top
+    bottom: 0;
+    padding: 10px
+    max-width: 15%
+    cursor: pointer;
+    display: none;
+    max-width: 75px
+    position: fixed;
+    right: 0;
+    &__image
+      display: block
+      margin: 0 auto
   &:hover
     background-color: lighten($main-color, 10%)
     cursor: pointer
@@ -20,6 +32,7 @@ img
     outline: none;
   &:focus 
     outline: none;
+  
 .section
   padding: 50px 0
   &-title
@@ -39,18 +52,26 @@ input
 @media (max-width: 1200px ) //*если что-то пойдет не так, проверь здесь
   .container
     width: 760px
+  
 
 @media (max-width: 768px )
   .container
     max-width: 580px
-    width: 90%
-
+    width: 80%
+  .button
+    &-top
+      padding: 5px
+      max-width: 9%
 @media (max-width: 320px)
   .container
     max-width: 280px
-    width: 90%
+    width: 85%
   .button
     border-radius: 5px
+    &-top
+      padding: 5px
+      max-width: 9%
+    
   .section
     padding: 30px 0
     &-title

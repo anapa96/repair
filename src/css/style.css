@@ -43,6 +43,22 @@ img {
   font-weight: 700;
 }
 
+.button-top {
+  bottom: 0;
+  padding: 10px;
+  max-width: 15%;
+  cursor: pointer;
+  display: none;
+  max-width: 75px;
+  position: fixed;
+  right: 0;
+}
+
+.button-top__image {
+  display: block;
+  margin: 0 auto;
+}
+
 .button:hover {
   background-color: #ffdb33;
   cursor: pointer;
@@ -92,17 +108,25 @@ input:focus {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 90%;
+    width: 80%;
+  }
+  .button-top {
+    padding: 5px;
+    max-width: 9%;
   }
 }
 
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
-    width: 90%;
+    width: 85%;
   }
   .button {
     border-radius: 5px;
+  }
+  .button-top {
+    padding: 5px;
+    max-width: 9%;
   }
   .section {
     padding: 30px 0;
@@ -437,6 +461,7 @@ input:focus {
   }
   .offer__feedback {
     direction: column;
+    font-size: 12px;
   }
   .offer__feedback-item {
     display: block;
@@ -508,8 +533,9 @@ input:focus {
 
 .modal-dialog__close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .modal-dialog__title {
