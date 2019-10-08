@@ -16,12 +16,11 @@ img
   &-top
     bottom: 0;
     padding: 10px
-    max-width: 15%
+    max-width: 20%
     cursor: pointer;
     display: none;
-    max-width: 75px
     position: fixed;
-    right: 0;
+    left: 0
     &__image
       display: block
       margin: 0 auto
@@ -38,6 +37,7 @@ img
   &-title
     font-size: 24px
     +bold
+    text-align: center
   &-subtitle
     display: block
     font-size: 16px
@@ -49,6 +49,10 @@ input
   &:focus
     outline: none
     border: 1px solid $main-color
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
 @media (max-width: 1200px ) //*если что-то пойдет не так, проверь здесь
   .container
     width: 760px

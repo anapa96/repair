@@ -46,12 +46,11 @@ img {
 .button-top {
   bottom: 0;
   padding: 10px;
-  max-width: 15%;
+  max-width: 20%;
   cursor: pointer;
   display: none;
-  max-width: 75px;
   position: fixed;
-  right: 0;
+  left: 0;
 }
 
 .button-top__image {
@@ -80,6 +79,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -97,6 +97,10 @@ input {
 input:focus {
   outline: none;
   border: 1px solid #ffd200;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -378,6 +382,7 @@ input:focus {
   background-size: contain;
   background-position: center right;
   position: relative;
+  padding-bottom: 92px;
 }
 
 .offer:before {
@@ -400,6 +405,7 @@ input:focus {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -501,6 +507,54 @@ input:focus {
   }
   .offer__feedback-item:first-child {
     margin-bottom: 7px;
+  }
+}
+
+/*Стили для блока portfolio*/
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+  padding-top: 88px;
+}
+
+.portfolio__title {
+  margin: auto;
+  margin-bottom: 95px;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding-top: 40px;
+  }
+  .portfolio__title {
+    width: 280px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
+  .portfolio .slider__image {
+    max-width: 245px;
   }
 }
 
