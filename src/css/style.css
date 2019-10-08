@@ -429,7 +429,7 @@ input:focus {
   margin-bottom: 25px;
 }
 
-.offer__feedback {
+.offer-feedback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,12 +441,12 @@ input:focus {
   padding-right: 10px;
 }
 
-.offer__feedback-item {
+.offer-feedback__text {
   display: block;
   max-width: 230px;
 }
 
-.offer__feedback-number {
+.offer-feedback__number {
   display: block;
   text-decoration: none;
   color: #333333;
@@ -465,19 +465,16 @@ input:focus {
   .offer__button {
     font-size: 13px;
   }
-  .offer__feedback {
-    direction: column;
-    font-size: 12px;
-  }
-  .offer__feedback-item {
-    display: block;
-    max-width: 100%;
+  .offer-feedback {
+    padding: 0;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 768px) {
   .offer {
     background: #fff;
+    padding-bottom: 53px;
   }
   .offer-block {
     width: 100%;
@@ -498,15 +495,15 @@ input:focus {
     padding: 0 40px 0 40px;
     margin-bottom: 22px;
   }
-  .offer__feedback {
+  .offer-feedback {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 6px;
+    padding-left: 2px;
   }
-  .offer__feedback-item:first-child {
-    margin-bottom: 7px;
+  .offer-feedback__text:first-child {
+    margin-bottom: 6px;
   }
 }
 
@@ -522,6 +519,8 @@ input:focus {
   margin-bottom: 95px;
   font-size: 30px;
   line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .portfolio__arrows {
@@ -642,7 +641,6 @@ input:focus {
   display: block;
   margin-top: 10px;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -670,7 +668,7 @@ input:focus {
   }
   .modal-dialog__feedback-text {
     width: 100%;
-    line-height: 15px;
+    font-size: 15px;
   }
 }
 

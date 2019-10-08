@@ -34,16 +34,16 @@
     width: 100%  
     min-height: 70px
     margin-bottom: 25px
-  &__feedback
+  &-feedback
     display: flex
     justify-content: space-between
     font-size: 15px
     line-height: 24px
     padding-right: 10px
-    &-item
+    &__text
       display: block
       max-width: 230px
-    &-number
+    &__number
       display: block;
       text-decoration: none
       color: $text-color
@@ -56,15 +56,13 @@
       margin-bottom: 10px
     &__button
       font-size: 13px
-    &__feedback
-      direction: column
-      font-size: 12px
-      &-item
-        display: block
-        max-width: 100%
+    &-feedback
+      padding: 0
+      font-size: 15px
 @media (max-width: 768px)
   .offer
     background: #fff
+    padding-bottom: 53px
     &-block
       width: 100%
       padding-right: 0
@@ -80,12 +78,12 @@
       font-size: 14px
       padding: 0 40px 0 40px
       margin-bottom: 22px
-    &__feedback
+    &-feedback
       flex-direction: column
-      padding-left: 6px
-      &-item
+      padding-left: 2px
+      &__text
         &:first-child
-          margin-bottom: 7px
+          margin-bottom: 6px
 
 
   
