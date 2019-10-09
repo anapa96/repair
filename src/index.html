@@ -135,9 +135,9 @@
   </div>
 
 
-  <section class="section portfolio wow fadeInDown">
+  <section class="section portfolio">
     <div class="container">
-      <h2 class="section-title portfolio__title wow fadeInDown" data-wow-delay="0.5s">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+      <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
 
    <!--   <div class="slider">
         <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Пример выполненной работы 1"></div>
@@ -268,6 +268,67 @@
   <!-- /.section price -->
 
 
+  <div class="section steps">
+    <div class="container">
+      <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
+      <!-- /.section-title steps__title -->
+      <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+      <!-- /.section__subtitle steps__subtitle -->
+
+      <div class="steps-block">
+        <div class="step  wow fadeInDown" data-wow-delay="0.2s">
+          <div class="step__image">
+            <img src="img/steps/woman-with-headset.png">
+          </div>
+          <!-- /.step__image -->
+          <p class="step__text">Вы звоните нам<br> или оставляете заявку</p>
+          <!-- /.step__text -->
+        </div>
+        <!-- /.step -->
+        <div class="step  wow fadeInDown" data-wow-delay="1s">
+          <div class="step__image">
+            <img src="img/steps/wall-clock.png">
+          </div>
+          <!-- /.step__image -->
+          <p class="step__text">Согласуем удобное <br>для Вас время выезда специалиста на замер</p>
+          <!-- /.step__text -->
+        </div>
+        <!-- /.step -->
+        <div class="step  wow fadeInDown" data-wow-delay="1.8s">
+          <div class="step__image">
+            <img src="img/steps/money.png">
+          </div>
+          <!-- /.step__image -->
+          <p class="step__text">Рассчитываем смету согласовываем <br>с Вами</p>
+          <!-- /.step__text -->
+        </div>
+        <!-- /.step -->
+        <div class="step  wow fadeInDown" data-wow-delay="2.6s">
+          <div class="step__image">
+            <img src="img/steps/folded-document-icon.png">
+          </div>
+          <!-- /.step__image -->
+          <p class="step__text">Подписываем договор закупаем материал<br> по оптовым ценам</p>
+          <!-- /.step__text -->
+        </div>
+        <!-- /.step -->
+        <div class="step  wow fadeInDown" data-wow-delay="3.4s">
+          <div class="step__image">
+              <img src="img/steps/calendar.png">
+          </div>
+          <!-- /.step__image -->
+          <p class="step__text">Выполняем ремонт<br> в указанные сроки</p>
+          <!-- /.step__text -->
+        </div>
+        <!-- /.step -->
+      </div>
+      <!-- /.step-block -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.section steps -->
+
+
  <!-- <script src=js/main.js> </script>--->
  <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -280,7 +341,11 @@
   <script src="js/owlSlider.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
-    new WOW().init();
+    const wow =  new WOW({
+      mobile: false,
+    });
+    wow.init();
+    
   </script>
 
 </body>
