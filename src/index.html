@@ -9,6 +9,7 @@
   <!--<link rel="stylesheet" href="css/slick.css">-->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css" class="css">
 </head>
 <body>
@@ -71,7 +72,7 @@
             </ul>
           </div>
           <!-- /.hero-text -->
-          <div class="hero-image">
+          <div class="hero-image wow fadeInRight" data-wow-delay="0.2s">
             <img src="img/hero/hero-image.png" alt="План квартиры">
           </div>
           <!-- /.hero-image -->
@@ -84,7 +85,7 @@
 
     <section class="offer section">
       <div class="container">
-        <div class="offer-block">
+        <div class="offer-block wow slideInLeft" data-wow-delay="0.4s">
           <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
@@ -93,12 +94,12 @@
           <form action="#" class="form offer__form">
             <input type="text" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" class="input offer__input" placeholder="Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+            <button class="button offer__button wow fadeIn" data-wow-delay="1s">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
           <div class="offer-feedback">
-            <span class="offer-feedback__text">Наш менеджер перезвонит Вам<br> в течение 60 секунд</span>
-            <span class="offer-feedback__text">или перезвоните нам сами <br>
+            <span class="offer-feedback__text wow fadeInLeft" data-wow-delay="1.4s">Наш менеджер перезвонит Вам<br> в течение 60 секунд</span>
+            <span class="offer-feedback__text wow fadeInRight"data-wow-delay="1.4s">или перезвоните нам сами <br>
               <a class="offer-feedback__number" href="tel: +7 (495) 42-251-31" >+7 (495) 42-251-31</a>
             </span>
           </div>
@@ -132,9 +133,11 @@
   <div id="top" class="button button-top">
     <img class="button-top__image" href="#" src="img/interface/top.png">
   </div>
-  <section class="section portfolio">
+
+
+  <section class="section portfolio wow fadeInDown">
     <div class="container">
-      <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+      <h2 class="section-title portfolio__title wow fadeInDown" data-wow-delay="0.5s">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
 
    <!--   <div class="slider">
         <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Пример выполненной работы 1"></div>
@@ -178,7 +181,7 @@
 
       <div class="cards">
 
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
           <div class="card__image"><img src="img/price/bathroom.jpg" alt=""></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -191,7 +194,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
           <div class="card__image"><img src="img/price/living.jpg" alt=""></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -204,7 +207,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
           <div class="card__image"><img src="img/price/office.jpg" alt=""></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -218,7 +221,7 @@
         <!-- /.card -->
 
 
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
           <div class="card__image"><img src="img/price/bildings.jpg" alt=""></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -231,7 +234,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
           <div class="card__image"><img src="img/price/kitchen.jpg" alt=""></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -244,7 +247,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card price__card">
+        <div class="card price__card wow fadeInUp">
           <div class="card__image"><img src="img/price/hauses.jpg" alt=""></div>
           <!-- /.card__image -->
           <div class="card__text">
@@ -274,7 +277,11 @@
   <!--<script src="js/slick.min.js" class=""></script>
   <script src="js/slider.js"></script>-->
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/owlSlider.js"></script>-->
+  <script src="js/owlSlider.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
 </html> 
