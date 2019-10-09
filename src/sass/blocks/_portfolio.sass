@@ -2,13 +2,19 @@
   background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50%
   padding-top: 88px
+  padding-bottom: 80px
   &__title
     margin: auto
     margin-bottom: 95px
-    font-size: 30px
-    line-height: 45px
     +bold
+    color: $text-color
   &__arrows
+    max-width: 120px
+    margin: auto
+    margin-top: 68px
+    display: flex
+    justify-content: space-between
+.owl-nav
     max-width: 120px
     margin: auto
     margin-top: 68px
@@ -16,19 +22,23 @@
     justify-content: space-between
 .slider
   &__image
-    margin: auto
+       
   
 @media (max-width: 768px )
   .portfolio
     padding-top: 40px
+    padding-bottom: 45px
     &__title
       width: 280px
       font-size: 18px;
       line-height: 21px
       margin-bottom: 40px
-    &__arrows
+    &__arrows,  .owl-nav
       margin-top: 46px
     .slider
       &__image
+        margin: 0 auto
         max-width: 245px
-
+  .owl-nav
+      margin-top: 46px
+       

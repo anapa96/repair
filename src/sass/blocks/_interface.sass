@@ -4,6 +4,8 @@ body
   +reg
 img
   max-width: 100%
+button
+  outline: none
 .container
   width: 1170px
   margin: auto
@@ -35,12 +37,16 @@ img
 .section
   padding: 50px 0
   &-title
-    font-size: 24px
+    font-size: 30px
+    line-height: 45px
     +bold
     text-align: center
+    color: #000000
   &-subtitle
     display: block
     font-size: 16px
+    color: #000000
+    font-size: 20px
 input
   border: 1px solid $border-input
   padding: 22px 30px
@@ -55,7 +61,9 @@ input
       cursor: pointer
 @media (max-width: 1200px ) //*если что-то пойдет не так, проверь здесь
   .container
-    width: 760px
+    width: 80%
+    max-width: 760px
+    
   
 
 @media (max-width: 768px )
