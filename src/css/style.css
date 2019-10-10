@@ -982,4 +982,55 @@ input:focus {
     font-size: 18px;
   }
 }
+
+/*Стили модального окна*/
+@-webkit-keyframes fadeInAnimated {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeInAnimated {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.increase-animated {
+  -webkit-animation-name: fadeInAnimated;
+          animation-name: fadeInAnimated;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
 /*# sourceMappingURL=style.css.map */
