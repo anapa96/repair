@@ -111,6 +111,18 @@ input:focus {
   cursor: pointer;
 }
 
+input.invalid {
+  border: 1px solid red;
+}
+
+div.invalid {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 80%;
@@ -429,19 +441,24 @@ input:focus {
   color: #333333;
 }
 
-.offer__input {
-  width: 240px;
-  margin-bottom: 30px;
+.offer__form-wrapper {
+  display: inline-block;
 }
 
-.offer__input:first-child {
+.offer__form-wrapper:first-child {
   margin-right: 10px;
+}
+
+.offer__input {
+  width: 240px;
+  margin-bottom: 20px;
 }
 
 .offer__button {
   width: 100%;
   min-height: 70px;
   margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 .offer-feedback {

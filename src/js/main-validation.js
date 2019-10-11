@@ -1,6 +1,8 @@
 $(document).ready(function () {
   /*Валидация формы */
   $('#offer-form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
     rules: {
       username: {
         required: true,
@@ -18,10 +20,12 @@ $(document).ready(function () {
         maxlength: jQuery.validator.format("Имя должно быть более {0} символов!")
       },
       phone: "Введите номер телефона"
-    }
+    },
   });
 
   $('#modal-form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
     rules: {
       username: {
         required: true,
@@ -43,6 +47,8 @@ $(document).ready(function () {
   });
       
   $('#brif-form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
     rules: {
       username: {
         required: true,
