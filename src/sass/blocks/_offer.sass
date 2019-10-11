@@ -31,6 +31,7 @@
     color: $text-color
   &__form-wrapper
     display: inline-block
+    position: relative
     &:first-child
       margin-right: 10px
   &__input
@@ -57,12 +58,17 @@
       +bold
 input.invalid-offer
   border: 1px solid red
+  margin-bottom: 55px
 div
   &.invalid-offer
-    max-width: 240px
-    margin-top: -0px
+    width: 100%
+    height: 40px
+    padding-bottom: 10px
     +bold
     text-align: center
+    position: absolute
+    bottom: 10px
+    left: 2px
 
 @media (max-width: 1200px)
   .offer
