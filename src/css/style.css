@@ -1141,15 +1141,12 @@ div.invalid-offer {
 .modal-dialog__input {
   width: 100%;
   padding-left: 25px;
-  margin-bottom: 30px;
-}
-
-.modal-dialog__input:first-child {
   margin-bottom: 18px;
 }
 
 .modal-dialog__button {
   padding: 26px 0 26px 2px;
+  margin-top: 12px;
   margin-bottom: 30px;
   width: 100%;
   font-size: 16px;
