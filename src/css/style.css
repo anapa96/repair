@@ -486,6 +486,10 @@ div.invalid {
   font-weight: 700;
 }
 
+input.invalid-offer {
+  border: 1px solid red;
+}
+
 div.invalid-offer {
   max-width: 240px;
   margin-top: -0px;
