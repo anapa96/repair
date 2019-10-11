@@ -35,3 +35,9 @@ $(document).ready(function () {
     };
   });
 });
+
+//*Подключение WOW
+const wow =  new WOW({
+  mobile: false
+});
+wow.init();

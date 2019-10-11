@@ -91,9 +91,9 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
 
-          <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+          <form action="#" class="form offer__form" id="offer-form">
+            <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button wow fadeIn" data-wow-delay="1s">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
@@ -118,9 +118,9 @@
       <span class="modal-dialog__close" id="close">&#10006;</span>
       <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
       <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <form action="#" class="form ">
-        <input type="text" class="input modal-dialog__input" placeholder="Ваше имя">
-        <input type="tel" class="input modal-dialog__input" placeholder="Ваш телефон">
+      <form action="#" id="modal-form">
+        <input type="text" name="username" class="input modal-dialog__input" placeholder="Ваше имя">
+        <input type="tel" name="phone" class="input modal-dialog__input phone" placeholder="Ваш телефон">
         <button class="button modal-dialog__button">Узнать стоимость</button>
       </form>
         <span class="modal-dialog__feedback-text">Или Вы можете перезвонить нам сами по телефону:   <br>  
@@ -375,9 +375,10 @@
           <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
           <span class="form__subtitle">Для этого заполните форму ниже</span>
 
-          <form action="#">
-            <input type="text" class="input brif__input" placeholder="Ваше имя">
-            <input type="tel" class="input brif__input" placeholder="Ваш телефон">
+          <form class="form" action="#" id="brif-form">
+            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+            <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
             <button class="button brif__button">Рассчитать стоимость</button>
             <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
           </form>
@@ -390,27 +391,38 @@
   </section>
   <!-- /.section brif -->
 
-
- <!-- <script src=js/main.js> </script>--->
- <script
+  <!--Подключение модального окна через JS-->
+  <!-- <script src=js/main.js> </script>--->
+  <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+
+  <!--Подключение модального окна через jQuery-->
   <script src=js/modal.js> </script>
+
+  <!--Slik слайдер-->
   <!--<script src="js/slick.min.js" class=""></script>
   <script src="js/slider.js"></script>-->
+
+  <!--OWL слайдер-->
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/owlSlider.js"></script>
+  
+  <!--Анимация-->
   <script src="js/wow.min.js"></script>
+  <script src="js/main-animation.js"></script>
+
+  <!--Валидация форм-->
+  <script src="js/jquery.validate.min.js"></script>
+    <!--Маска-->
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main-validation.js"></script>
 
 
-  <script>
-    const wow =  new WOW({
-      mobile: false
-    });
-    wow.init();
-  </script>
- <script src="js/main-animation.js"></script>
+
+ 
+ 
 
 </body>
 </html> 

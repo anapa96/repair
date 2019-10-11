@@ -7,11 +7,6 @@ button.addEventListener('click', function(){
   setTimeout(function(){
     modal.classList.toggle('modal_active');
   }, 5000);
-
- /* function second_passed() {
-    modal.classList.remove('modal_active');
-  }
-  setTimeout(second_passed, 5000);*/
 });
 
 close.addEventListener('click', function(){
