@@ -117,7 +117,7 @@ input.invalid {
 
 div.invalid {
   margin-top: -10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   text-align: center;
@@ -484,6 +484,14 @@ div.invalid {
   color: #333333;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+div.invalid-offer {
+  max-width: 240px;
+  margin-top: -0px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

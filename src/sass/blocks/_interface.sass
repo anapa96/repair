@@ -61,11 +61,13 @@ input
       cursor: pointer
 input.invalid
   border: 1px solid red
-div.invalid
-  margin-top: -10px
-  margin-bottom: 10px
-  +bold
-  text-align: center
+div
+  &.invalid
+    margin-top: -10px
+    margin-bottom: 15px
+    +bold
+    text-align: center
+
 
 @media (max-width: 1200px ) //*если что-то пойдет не так, проверь здесь
   .container

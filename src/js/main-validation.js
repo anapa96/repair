@@ -2,7 +2,7 @@ $(document).ready(function () {
   /*Валидация формы */
   $('#offer-form').validate({
     errorElement: "div",
-    errorClass: "invalid",
+    errorClass: "invalid-offer",
     rules: {
       username: {
         required: true,
@@ -16,7 +16,7 @@ $(document).ready(function () {
     messages: {
       username: {
         required: "Введите имя",
-        minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов!"),
+        minlength: jQuery.validator.format("Имя должно быть не менее {0} символов!"),
         maxlength: jQuery.validator.format("Имя должно быть более {0} символов!")
       },
       phone: "Введите номер телефона"
@@ -66,8 +66,8 @@ $(document).ready(function () {
     messages: {
       username: {
         required: "Введите имя",
-        minlength: jQuery.validator.format("Имя должно быть не меньше {0} символов!"),
-        maxlength: jQuery.validator.format("Имя должно быть более {0} символов!")
+        minlength: jQuery.validator.format("Имя должно быть не менее {0} символов!"),
+        maxlength: jQuery.validator.format("Имя должно быть не более {0} символов!")
       },
       email: {
         required: "Заполните поле",
