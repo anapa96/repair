@@ -1,3 +1,4 @@
+$(document).ready(function () {
 ymaps.ready(init);    
 function init(){ 
     var myMap = new ymaps.Map("map", {
@@ -16,3 +17,4 @@ function init(){
 
   myMap.geoObjects.add(myPlacemark);
 }
+});
