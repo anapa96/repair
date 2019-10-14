@@ -94,7 +94,7 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
 
-          <form action="#" class="form offer__form" id="offer-form">
+          <form action="mail.php" method="POST" class="form offer__form" id="offer-form">
             <div class="offer__form-wrapper">
               <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             </div>
@@ -125,7 +125,7 @@
       <span class="modal-dialog__close" id="close">&#10006;</span>
       <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
       <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <form action="#" id="modal-form">
+      <form action="mail.php" method="POST" id="modal-form">
         <input type="text" name="username" class="input modal-dialog__input" placeholder="Ваше имя">
         <input type="tel" name="phone" class="input modal-dialog__input phone" placeholder="Ваш телефон">
         <button class="button modal-dialog__button">Узнать стоимость</button>
@@ -382,7 +382,7 @@
           <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
           <span class="form__subtitle">Для этого заполните форму ниже</span>
 
-          <form class="form" action="#" id="brif-form">
+          <form class="form" action="mail.php" method="POST" id="brif-form">
             <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
             <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
             <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
