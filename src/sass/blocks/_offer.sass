@@ -58,17 +58,14 @@
       +bold
 input.invalid-offer
   border: 1px solid red
-  margin-bottom: 55px
 div
   &.invalid-offer
     width: 100%
-    height: 40px
-    padding-bottom: 10px
+    position: absolute
     +bold
     text-align: center
-    position: absolute
-    bottom: 10px
-    left: 2px
+    color: red
+    bottom: 0
 
 @media (max-width: 1200px)
   .offer
@@ -81,6 +78,9 @@ div
     &-feedback
       padding: 0
       font-size: 15px
+  div
+  &.invalid-offer
+    font-size: 10px
 @media (max-width: 768px)
   .offer
     background: #fff
@@ -106,6 +106,9 @@ div
       &__text
         &:first-child
           margin-bottom: 6px
+  div
+  &.invalid-offer
+    font-size: 10px
 
 
 
