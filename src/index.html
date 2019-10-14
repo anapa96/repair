@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css" class="css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<c72f28e5-8321-4199-9f42-afdbf15d0e3b>&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 <body>
   <nav class="navbar">
@@ -395,9 +398,7 @@
   </section>
   <!-- /.section brif -->
   <div class="footer">
-    <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A91ae155c841887e8151024a725fd490265d3400c846ae2408aca1478aad6699b&amp;width=100%25&amp;height=650&amp;lang=ru_RU&amp;scroll=false"></script>
-    </div>
+    <div class="map" id="map"></div>
     <!-- /.map -->
     <div class="container">
       <div class="contacts-block">
@@ -458,9 +459,12 @@
 
   <!--Валидация форм-->
   <script src="js/jquery.validate.min.js"></script>
-    <!--Маска-->
+    <!--Маска--> 
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/main-validation.js"></script>
+
+  <!--Карта-->
+  <script src="js/map.js"></script>
 
 
 
