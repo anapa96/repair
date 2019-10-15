@@ -117,30 +117,7 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
-  </main>
-
-
-  <div class="modal" id="modal">
-    <div class="modal-dialog">
-      <span class="modal-dialog__close" id="close">&#10006;</span>
-      <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
-      <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <form action="mail.php" method="POST" id="modal-form">
-        <input type="text" name="username" class="input modal-dialog__input" placeholder="Ваше имя">
-        <input type="tel" name="phone" class="input modal-dialog__input phone" placeholder="Ваш телефон">
-        <button class="button modal-dialog__button">Узнать стоимость</button>
-      </form>
-        <span class="modal-dialog__feedback-text">Или Вы можете перезвонить нам сами по телефону:   <br>  
-          <a href="tel: +7 (8182) 42-51-31" class="modal-dialog__feedback-number">+7 (8182) 42-51-31</a>
-        </span>
-    </div>
-    <!-- /.modal-dialog -->
-  </div>
-  <!-- /.modal -->   
-  <div id="top" class="button button-top">
-    <img class="button-top__image" href="#" src="img/interface/top.png">
-  </div>
-
+ 
 
   <section class="section portfolio">
     <div class="container">
@@ -334,6 +311,74 @@
     <!-- /.container -->
   </div>
   <!-- /.section steps -->
+  <div class="section proffer">
+    <div class="proffer__title-block">
+      <div class="contaner">
+        <h2 class="proffer__title">Ремонт обойдется Вам дешевле, так как<br>мы используем качественные материалы по оптовым ценам</h2>
+      </div>
+    </div>
+    <div class="container">
+    <div class="proffer-wrapper">
+      
+      <div class="proffer__item">
+        <div class="proffer__image">
+          <img src="img/proffer/proffer-1.jpg">
+        </div>
+        <p class="proffer__text">Поможем закупить все материалы <br>по оптовым ценам у проверенных <br>поставщиков</p>
+      </div>
+
+      <div class="proffer__item">
+        <div class="proffer__image">
+          <img src="img/proffer/proffer-2.jpg">
+        </div>
+        <p class="proffer__text">Мы дадим Вам <span class="proffer__text_bold">максимальные скидки </span><br>у наших партнеров для закупки материалов оптом</p>
+      </div>
+
+      <div class="proffer__item">
+        <div class="proffer__image">
+          <img src="img/proffer/proffer-3.jpg">
+        </div>
+        <p class="proffer__text">Все, что не сможете найти в городе - поможем заказать <span class="proffer__text_bold">у проверенных поставщиков</span></p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- /.section proffer -->
+  <div class="section guarantee">
+    <div class="container">
+      <h2 class="guarantee__title">Все наши гарантийные обязательства подробно и прозрачно описаны в договоре</h2>
+
+      <div class="guarantee-wrapper">
+
+        <div class="guarantee__item">
+          <div class="guarantee__image">
+            <img src="img/guarantee/guarantee-1.jpg" class="guarantee__scan">
+          </div>
+          <span class="guarantee__text">Гарантия на качество<br> выполняемых работ</span>
+        </div>
+        <!-- /.guarantee__item -->
+
+        <div class="guarantee__item">
+          <div class="guarantee__image">
+            <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan">
+          </div>
+          <span class="guarantee__text">Гарантия на фиксированные цены. Виды работ и цены на них<br> прописаны в договоре</span>
+        </div>
+        <!-- /.guarantee__item -->
+
+        <div class="guarantee__item">
+          <div class="guarantee__image">
+            <img src="img/guarantee/guarantee-3.jpg" class="guarantee__scan">
+          </div>
+          <span class="guarantee__text">Гарантия на точное соблюдение сроков и ответственность за их невыполнение</span>
+        </div>
+        <!-- /.guarantee__item -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.section guarantee -->
+
   <section class="section brif">
     <div class="container">
       <div class="brif-block">
@@ -397,6 +442,29 @@
     <!-- /.container -->
   </section>
   <!-- /.section brif -->
+  
+  </main>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <span class="modal-dialog__close" id="close">&#10006;</span>
+      <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
+      <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+      <form action="mail.php" method="POST" id="modal-form">
+        <input type="text" name="username" class="input modal-dialog__input" placeholder="Ваше имя">
+        <input type="tel" name="phone" class="input modal-dialog__input phone" placeholder="Ваш телефон">
+        <button class="button modal-dialog__button">Узнать стоимость</button>
+      </form>
+        <span class="modal-dialog__feedback-text">Или Вы можете перезвонить нам сами по телефону:   <br>  
+          <a href="tel: +7 (8182) 42-51-31" class="modal-dialog__feedback-number">+7 (8182) 42-51-31</a>
+        </span>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->   
+  <div id="top" class="button button-top">
+    <img class="button-top__image" href="#" src="img/interface/top.png">
+  </div>
+
   <div class="footer">
     <div class="map" id="map"></div>
     <!-- /.map -->

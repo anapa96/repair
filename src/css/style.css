@@ -881,6 +881,240 @@ div.invalid-offer {
   }
 }
 
+/*Стили блока proffer*/
+.proffer {
+  padding-bottom: 100px;
+}
+
+.proffer__title {
+  padding: 87px 0 93px 0;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 32px;
+  line-height: 50px;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.proffer__title-block {
+  background-color: #ffd200;
+}
+
+.proffer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+}
+
+.proffer__item {
+  max-width: 370px;
+  position: relative;
+}
+
+.proffer__text {
+  position: absolute;
+  left: 26px;
+  top: 6px;
+  max-width: 290px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.proffer__text_bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .proffer__title {
+    font-size: 27px;
+    line-height: 42px;
+  }
+  .proffer__item {
+    width: 32%;
+  }
+  .proffer__text {
+    left: 10px;
+    top: 6px;
+    max-width: 95%;
+    font-size: 12.5px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 992px) {
+  .proffer__title {
+    padding: 70px 0 76px 0;
+    width: 257px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .proffer-wrapper {
+    padding-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .proffer__item {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+  .proffer__text {
+    left: 18px;
+    top: 4px;
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .proffer__text {
+    font-size: 12px;
+  }
+  .proffer__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*Стили блока гарантий*/
+.guarantee {
+  margin-bottom: 100px;
+}
+
+.guarantee__title {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 93px;
+  color: #000000;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.guarantee-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 1070px;
+}
+
+.guarantee__item {
+  width: 270px;
+}
+
+.guarantee__image {
+  height: 360px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.guarantee__scan {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guarantee__text {
+  display: block;
+  font-size: 16.5px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .guarantee-wrapper {
+    width: 100%;
+  }
+  .guarantee__item {
+    width: 30%;
+  }
+  .guarantee__image {
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .guarantee__text {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .guarantee__title {
+    width: 600px;
+    font-size: 27px;
+    line-height: 42px;
+  }
+  .guarantee-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .guarantee__item {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .guarantee {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .guarantee__title {
+    width: 250px;
+    margin-top: 0px;
+    padding: 0;
+    margin-bottom: 50px;
+    font-size: 18.3px;
+    line-height: 21px;
+  }
+  .guarantee-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .guarantee__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .guarantee__image {
+    margin-bottom: 25px;
+  }
+  .guarantee__text {
+    width: 90%;
+    margin: auto;
+    line-height: 18px;
+  }
+}
+
 /*Стили блока бриф*/
 .brif {
   background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");

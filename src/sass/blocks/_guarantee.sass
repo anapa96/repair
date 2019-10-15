@@ -1,0 +1,80 @@
+.guarantee
+  margin-bottom: 100px
+  &__title
+    max-width: 650px
+    margin: auto
+    text-align: center
+    padding-bottom: 93px
+    color: #000000
+    font-size: 30px
+    line-height: 45px
+    +bold
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    margin: auto
+    width: 1070px
+  &__item
+    width: 270px
+  &__image
+    height: 360px
+    margin: auto
+    margin-bottom: 35px
+  &__scan
+    align-items: center
+  &__text
+    display: block
+    font-size: 16.5px
+    line-height: 24px
+    text-align: center
+@media (max-width: 1200px)
+  .guarantee
+    &-wrapper
+      width: 100%
+    &__item
+      width: 30%
+    &__image
+      height: auto
+      margin-bottom: 15px
+    &__text
+      display: block
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+@media (max-width: 992px)
+  .guarantee
+    &__title
+      width: 600px
+      font-size: 27px
+      line-height: 42px
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      padding: 0
+    &__item
+      margin-bottom: 35px
+@media (max-width: 768px)
+  .guarantee
+    margin-top: 0px
+    padding-top: 0px
+    &__title
+      width: 250px
+      margin-top: 0px
+      padding: 0
+      margin-bottom: 50px
+      font-size: 18.3px
+      line-height: 21px
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      width: 100%
+    &__item
+      width: 100%
+      margin-bottom: 40px
+    &__image
+      margin-bottom: 25px
+    &__text
+      width: 90%
+      margin: auto
+      line-height: 18px
+
