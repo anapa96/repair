@@ -16,8 +16,8 @@ $(document).ready(function () {
     messages: {
       username: {
         required: "Введите имя",
-        minlength: jQuery.validator.format("Имя должно быть не менее {0} символов!"),
-        maxlength: jQuery.validator.format("Имя должно быть более {0} символов!")
+        minlength: jQuery.validator.format("Имя не менее {0} символов!"),
+        maxlength: jQuery.validator.format("Имя не более {0} символов!")
       },
       phone: "Введите номер телефона"
     },
@@ -39,8 +39,8 @@ $(document).ready(function () {
     messages: {
       username: {
         required: "Введите имя",
-        minlength: jQuery.validator.format("Имя должно быть не менее {0} символов!"),
-        maxlength: jQuery.validator.format("Имя должно быть более {0} символов!")
+        minlength: jQuery.validator.format("Имя не менее {0} символов!"),
+        maxlength: jQuery.validator.format("Имя не более {0} символов!")
       },
         phone: "Введите номер телефона"
       }
@@ -66,8 +66,8 @@ $(document).ready(function () {
     messages: {
       username: {
         required: "Введите имя",
-        minlength: jQuery.validator.format("Имя должно быть не менее {0} символов!"),
-        maxlength: jQuery.validator.format("Имя должно быть более {0} символов!")
+        minlength: jQuery.validator.format("Имя не менее {0} символов!"),
+        maxlength: jQuery.validator.format("Имя не более {0} символов!")
       },
       email: {
         required: "Введите E-mail",
