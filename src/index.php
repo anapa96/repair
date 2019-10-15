@@ -280,7 +280,7 @@
         <!-- /.step -->
         <div class="step  wow fadeInDown" data-wow-delay="1.8s">
           <div class="step__image">
-            <img src="img/steps/money.png">
+            <img src="img/steps/money.png" alt="Рассчитаем и согласуем смету">
           </div>
           <!-- /.step__image -->
           <p class="step__text">Рассчитываем смету согласовываем <br>с Вами</p>
@@ -289,7 +289,7 @@
         <!-- /.step -->
         <div class="step  wow fadeInDown" data-wow-delay="2.6s">
           <div class="step__image">
-            <img src="img/steps/folded-document-icon.png">
+            <img src="img/steps/folded-document-icon.png" alt="Подпишим договор">
           </div>
           <!-- /.step__image -->
           <p class="step__text">Подписываем договор закупаем материал<br> по оптовым ценам</p>
@@ -298,7 +298,7 @@
         <!-- /.step -->
         <div class="step  wow fadeInDown" data-wow-delay="3.4s">
           <div class="step__image">
-              <img src="img/steps/calendar.png">
+              <img src="img/steps/calendar.png" alt="Выполним работу в срок">
           </div>
           <!-- /.step__image -->
           <p class="step__text">Выполняем ремонт<br> в указанные сроки</p>
@@ -322,21 +322,21 @@
       
       <div class="proffer__item">
         <div class="proffer__image">
-          <img src="img/proffer/proffer-1.jpg">
+          <img src="img/proffer/proffer-1.jpg" alt="Закупим материал по оптовым ценам">
         </div>
         <p class="proffer__text">Поможем закупить все материалы <br>по оптовым ценам у проверенных <br>поставщиков</p>
       </div>
 
       <div class="proffer__item">
         <div class="proffer__image">
-          <img src="img/proffer/proffer-2.jpg">
+          <img src="img/proffer/proffer-2.jpg" alt="Максимальные скидки для клиентов">
         </div>
         <p class="proffer__text">Мы дадим Вам <span class="proffer__text_bold">максимальные скидки </span><br>у наших партнеров для закупки материалов оптом</p>
       </div>
 
       <div class="proffer__item">
         <div class="proffer__image">
-          <img src="img/proffer/proffer-3.jpg">
+          <img src="img/proffer/proffer-3.jpg" alt="Поможем заказать у проверенных поставщиков">
         </div>
         <p class="proffer__text">Все, что не сможете найти в городе - поможем заказать <span class="proffer__text_bold">у проверенных поставщиков</span></p>
       </div>
@@ -352,7 +352,7 @@
 
         <div class="guarantee__item">
           <div class="guarantee__image">
-            <img src="img/guarantee/guarantee-1.jpg" class="guarantee__scan">
+            <img src="img/guarantee/guarantee-1.jpg" class="guarantee__scan" alt="Скан документа гарантии-1">
           </div>
           <span class="guarantee__text">Гарантия на качество<br> выполняемых работ</span>
         </div>
@@ -360,7 +360,7 @@
 
         <div class="guarantee__item">
           <div class="guarantee__image">
-            <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan">
+            <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan" alt="Скан документа гарантии-2">
           </div>
           <span class="guarantee__text">Гарантия на фиксированные цены. Виды работ и цены на них<br> прописаны в договоре</span>
         </div>
@@ -368,7 +368,7 @@
 
         <div class="guarantee__item">
           <div class="guarantee__image">
-            <img src="img/guarantee/guarantee-3.jpg" class="guarantee__scan">
+            <img src="img/guarantee/guarantee-3.jpg" class="guarantee__scan alt="Скан документа гарантии-1">
           </div>
           <span class="guarantee__text">Гарантия на точное соблюдение сроков и ответственность за их невыполнение</span>
         </div>
@@ -455,14 +455,14 @@
         <button class="button modal-dialog__button">Узнать стоимость</button>
       </form>
         <span class="modal-dialog__feedback-text">Или Вы можете перезвонить нам сами по телефону:   <br>  
-          <a href="tel: +7 (8182) 42-51-31" class="modal-dialog__feedback-number">+7 (8182) 42-51-31</a>
+          <a href="tel: 78182425131" class="modal-dialog__feedback-number">+7 (8182) 42-51-31</a>
         </span>
     </div>
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->   
   <div id="top" class="button button-top">
-    <img class="button-top__image" src="img/interface/top.png">
+    <img class="button-top__image" src="img/interface/top.png" alt="Вверх">
   </div>
 
   <div class="footer">
@@ -475,19 +475,19 @@
         <ul class="contacts-list">
           <li class="contacts-list__item">
             <span class="contacts-list__icon">
-              <img src="img/footer/map-placeholder.png">
+              <img src="img/footer/map-placeholder.png" alt="icon-map">
             </span>
             <span class="contacts-list__text">г. Москва<br><span class="contacts-list__text_bold">ул. Ленинга, д. 10, корпус 2, оф. 308</span></span>
           </li>
           <li class="contacts-list__item">
             <span class="contacts-list__icon">
-              <img src="img/footer/clock-with-white-face.png">
+              <img src="img/footer/clock-with-white-face.png" alt="icon-clock">
             </span>
             <span class="contacts-list__text">Режим работы:<br><span class="contacts-list__text_bold">с 9:00 до 18:00</span></span>
           </li>
           <li class="contacts-list__item">
             <span class="contacts-list__icon">
-              <img src="img/footer/phone-call-button.png">
+              <img src="img/footer/phone-call-button.png" alt="icon-phone">
             </span>
             <span class="contacts-list__text"> Телефон:<br>
               <a href="tel:+7(495)42-251-31" class="contacts-list__link">+ 7 (495) 42-251-31</a>
@@ -504,7 +504,7 @@
   <!-- /.footer section -->
 
   <!--Подключение модального окна через JS
-   <script src=js/main.js> </script>--->
+   <script src=js/main.js> </script> -->
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
