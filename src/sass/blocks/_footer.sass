@@ -1,11 +1,9 @@
 .footer
   position: relative
-.map
-  position: absolute
-  left: 0
-  top: 0
-  width: 50%
-  height: 650px
+  &-map
+    position: absolute
+    width: 50%
+    display: inline-block
 .contacts
   width: 371px
   padding-top: 70px
@@ -76,14 +74,17 @@
   .footer
     display: flex
     flex-direction: column-reverse
-  .map
-    position: static
-    width: 100%
-    margin-top: 20px
+    align-items: center
+    &-map
+      width: 100%
+      position: static
+      margin-top: 20px
   .contacts
-    flex-basis: 100%
+    width: auto
     padding-top: 48px
-    margin-left: 20px
+    margin-left: 0px
+    padding-left: 0px
+    margin: 0 auto
     &-block
       padding-left: 20px
     &__title

@@ -1,2 +1,0 @@
-
-$(document).ready(function(){const button=$('#button');const modal=$('#modal');const close=$('#close');button.on('click',function(){modal.addClass('modal_active');});close.on('click',function(){modal.removeClass('modal_active');});const top_show=150;const delay=1000;$(window).scroll(function(){if($(this).scrollTop()>top_show)$('#top').fadeIn();else $('#top').fadeOut();});$('#top').click(function(){$('body, html').animate({scrollTop:0},delay);});});

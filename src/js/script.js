@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  /*модальые окна*/
   const button=$('#button');
   const modal=$('#modal');
   const close=$('#close');
@@ -21,6 +22,31 @@ $(document).ready(function(){
     $('body, html').animate({
       scrollTop: 0
     }, delay);
+  });
+/*подключение wow*/
+  const wow =  new WOW({
+    mobile: false
+  });
+  wow.init();
+  /*OWL слайдер*/ 
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin:30,
+    nav:true,
+    navText: ["<img src='img/portfolio/left-arrow.png'>", "<img src='img/portfolio/right-arrow.png'>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1,
+            margin: 30
+        },
+        992:{
+            items:3,
+            margin: 30
+        }
+    }
   });
 
 });

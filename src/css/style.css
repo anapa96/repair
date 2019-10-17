@@ -862,55 +862,31 @@ div.invalid {
           animation-name: slideInLeft;
 }
 
-@-webkit-keyframes fadeInAnimated {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0.0;
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
   }
-  60% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  80% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  50% {
     opacity: 1;
   }
 }
 
-@keyframes fadeInAnimated {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0.0;
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
   }
-  60% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  80% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  50% {
     opacity: 1;
   }
 }
 
-.increase-animated {
-  -webkit-animation-name: fadeInAnimated;
-          animation-name: fadeInAnimated;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
 }
 
 /*Стили для главного экрана*/
@@ -1273,6 +1249,145 @@ div.invalid-offer {
   .invalid-offer {
     font-size: 10px;
   }
+}
+
+/*Стили для карусели portfolio*/
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
 }
 
 /*Стили для блока portfolio*/
@@ -2089,7 +2204,7 @@ div.invalid-offer {
 
 @media (max-width: 992px) {
   .brif {
-    background-size: 50%, 150%;
+    background-size: 50%, 155%;
   }
 }
 
@@ -2098,7 +2213,7 @@ div.invalid-offer {
     background-color: #fff;
     background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 44.5%, cover;
+    background-size: 100% 47%, cover;
     background-repeat: repeat-x, no-repeat;
     padding-top: 25px;
     padding-bottom: 28px;
@@ -2179,17 +2294,117 @@ div.invalid-offer {
   }
 }
 
+/*Стили карты*/
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/yandex-before-load.jpg") #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 650px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  -webkit-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.loader:after,
+.loader:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*Стили для footer*/
 .footer {
   position: relative;
 }
 
-.map {
+.footer-map {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 50%;
-  height: 650px;
+  display: inline-block;
 }
 
 .contacts {
@@ -2307,17 +2522,21 @@ div.invalid-offer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .map {
-    position: static;
+  .footer-map {
     width: 100%;
+    position: static;
     margin-top: 20px;
   }
   .contacts {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: auto;
     padding-top: 48px;
-    margin-left: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin: 0 auto;
   }
   .contacts-block {
     padding-left: 20px;
@@ -2530,5 +2749,18 @@ div.invalid-offer {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   margin-left: 5px;
+}
+
+@media (max-width: 440px) {
+  .message-dialog {
+    padding: 50px 10px 50px 10px;
+  }
+  .message__tilte {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
 }
 /*# sourceMappingURL=style.css.map */
