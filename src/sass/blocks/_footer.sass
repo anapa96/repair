@@ -7,9 +7,9 @@
   width: 50%
   height: 650px
 .contacts
-  flex-basis: 50%
+  width: 371px
   padding-top: 70px
-  padding-left: 212px
+  float: right
   &__title
     +bold
     font-size: 22px
@@ -23,8 +23,11 @@
     list-style-type: none
     &__item
       display: flex
+      width: 100%
       align-items: flex-start
       margin-bottom: 34px
+      &:first-child
+        width: 200px
       &:nth-child(2)
         margin-bottom: 32px
     &__text
@@ -34,10 +37,12 @@
       margin-top: -5px
       &_bold
         +bold
+
     &__link
       +bold
       text-decoration: none
       color: black
+      width: 100%
       &:hover
         color: $main-color
     &__icon
