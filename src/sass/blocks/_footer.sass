@@ -9,7 +9,7 @@
 .contacts
   flex-basis: 50%
   padding-top: 70px
-  padding-left: 210px
+  padding-left: 212px
   &__title
     +bold
     font-size: 22px
@@ -24,7 +24,9 @@
     &__item
       display: flex
       align-items: flex-start
-      margin-bottom: 35px
+      margin-bottom: 34px
+      &:nth-child(2)
+        margin-bottom: 32px
     &__text
       width: 150px
       font-size: 16px
@@ -41,12 +43,29 @@
       height: 20px
       text-align: center
       line-height: 20px
-      margin-right: 23px
+      margin-right: 20px
+      &-3
+        margin-top: 2px
+        margin-right: 22px
 @media (max-width: 1200px)
   .contacts
     padding-left: 30px
+    &__title
+      width: 300px
+      font-size: 15px
+      margin-bottom: 35px
+    &-list
+      &__item
+        margin-bottom: 34px
+        &:nth-child(2)
+          margin-bottom: 32px
+      &__text
+        width: 150px
+        font-size: 12px
+        line-height: 20px
 
-@media (max-width: 768px)
+
+@media (max-width: 991px)
   .footer
     display: flex
     flex-direction: column-reverse
@@ -56,13 +75,25 @@
     margin-top: 20px
   .contacts
     flex-basis: 100%
-    padding-top: 70px
-    padding-left: 0
+    padding-top: 48px
+    margin-left: 20px
+    &-block
+      padding-left: 20px
     &__title
-       font-size: 18px
-       line-height: 1.2
-       margin-bottom: 39px
+      width: 277px
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 37px
     &-list
+      &__item
+        &:first-child
+          margin-bottom: 34px
+        &:nth-child(2)
+          margin-bottom: 33px
+          
       &__icon
         margin-right: 10px
+      &__text
+        font-size: 16px
+        line-height: 26px
 

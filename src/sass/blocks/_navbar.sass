@@ -1,6 +1,5 @@
 .navbar 
   padding: 7px 0;
- 
   &-block
     display: flex
     justify-content: space-between
@@ -23,20 +22,11 @@
     text-decoration: none
     margin-top: 6px
     +bold
-@media (max-width: 768px )
+@media (max-width: 921px )
   .navbar
-    &__contacts
-      display: none
-    &__button
-      font-size: 12px
-      padding: 15px 26px
-    &__logo
-      width: 90px
-
-@media (max-width: 320px)
-  .navbar
+    padding-bottom: 17px
     padding-top: 17px
-    padding-right: 10px
+    padding-left: 0px
     display: flex
     justify-content: space-between
     &__contacts
@@ -44,9 +34,10 @@
     &__button
       margin-top: -2px
       font-size: 10px
-      font-weight: 400
       padding: 15px 26px 14px 26px
+      margin-right: 3px
     &__logo
       width: 91px
+
 
 

@@ -28,6 +28,7 @@
     font-size: 16px
     line-height: 20px
     margin-bottom: 29px
+    margin-left: -1px
     color: $text-color
   &__form-wrapper
     display: inline-block
@@ -40,14 +41,15 @@
   &__button
     width: 100%  
     min-height: 70px
-    margin-bottom: 25px
+    margin-bottom: 26px
     margin-top: 10px
   &-feedback
     display: flex
     justify-content: space-between
     font-size: 15px
     line-height: 24px
-    padding-right: 10px
+    padding-right: 11px
+    margin-left: -2px
     &__text
       display: block
       max-width: 230px
@@ -66,22 +68,28 @@ div
     text-align: center
     color: red
     bottom: 0
-
+#offer__input-name
+  padding-left: 25px
 @media (max-width: 1200px)
   .offer
-    background-size: cover
+    &-block
+      padding-right: 20px
+    &__title
+      font-size: 19px
+      line-height: 25px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 16px
+    &__form-wrapper
+     width: 48%
+    &:first-child
+      margin-right: 0px
     &__input
       width: 100%
-      margin-bottom: 10px
-    &__button
-      font-size: 13px
+      margin-bottom: 20px
     &-feedback
-      padding: 0
-      font-size: 15px
-  div
-  &.invalid-offer
-    font-size: 10px
-@media (max-width: 768px)
+      font-size: 12px
+@media (max-width: 991px)
   .offer
     background: #fff
     padding-bottom: 53px
@@ -91,21 +99,36 @@ div
     &__title
       display: block
       max-width: 265px
+      font-size: 18px
       line-height: 22px
       margin-bottom: 16px
+      margin-top: 18px
     &__subtitle
+      font-size: 14px
       line-height: 18px
       margin-bottom: 25px
+    &__form
+      padding-right: 3px
+      &-wrapper
+        width: 100%
+        &:first-child
+          margin-bottom: 11px
+    &__input
+      margin-bottom: 0px
     &__button
       font-size: 14px
       padding: 0 40px 0 40px
       margin-bottom: 22px
+      border-radius: 10px
     &-feedback
       flex-direction: column
-      padding-left: 2px
+      padding-left: 9px
+      font-size: 15px
       &__text
         &:first-child
-          margin-bottom: 6px
+          margin-bottom: 7px
+        &:last-child
+          margin-left: -2px
   div
   &.invalid-offer
     font-size: 10px

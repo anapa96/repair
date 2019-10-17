@@ -96,7 +96,7 @@
 
           <form action="mail.php" method="POST" class="form offer__form" id="offer-form">
             <div class="offer__form-wrapper">
-              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+              <input type="text" name="username" class="input offer__input" id="offer__input-name" placeholder="Ваше имя">
             </div>
             <div class="offer__form-wrapper">
               <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
@@ -260,7 +260,7 @@
       <!-- /.section__subtitle steps__subtitle -->
 
       <div class="steps-block">
-        <div class="step  wow fadeInDown" data-wow-delay="0.2s">
+        <div class="step  wow fadeInDown" data-wow-delay="0.1s">
           <div class="step__image">
             <img src="img/steps/woman-with-headset.png" alt="Свяжитесь с нами">
           </div>
@@ -269,17 +269,17 @@
           <!-- /.step__text -->
         </div>
         <!-- /.step -->
-        <div class="step  wow fadeInDown" data-wow-delay="1s">
-          <div class="step__image">
+        <div class="step  wow fadeInDown" data-wow-delay="0.2s">
+          <div class="step__image step__image-2">
             <img src="img/steps/wall-clock.png" alt="Выберем удобное время">
           </div>
           <!-- /.step__image -->
-          <p class="step__text">Согласуем удобное <br>для Вас время выезда специалиста на замер</p>
+          <p class="step__text ">Согласуем удобное <br>для Вас время выезда специалиста на замер</p>
           <!-- /.step__text -->
         </div>
         <!-- /.step -->
-        <div class="step  wow fadeInDown" data-wow-delay="1.8s">
-          <div class="step__image">
+        <div class="step  wow fadeInDown" data-wow-delay="0.3s">
+          <div class="step__image step__image-3">
             <img src="img/steps/money.png" alt="Рассчитаем и согласуем смету">
           </div>
           <!-- /.step__image -->
@@ -287,8 +287,8 @@
           <!-- /.step__text -->
         </div>
         <!-- /.step -->
-        <div class="step  wow fadeInDown" data-wow-delay="2.6s">
-          <div class="step__image">
+        <div class="step  wow fadeInDown" data-wow-delay="0.4s">
+          <div class="step__image step__image-4">
             <img src="img/steps/folded-document-icon.png" alt="Подпишим договор">
           </div>
           <!-- /.step__image -->
@@ -296,8 +296,8 @@
           <!-- /.step__text -->
         </div>
         <!-- /.step -->
-        <div class="step  wow fadeInDown" data-wow-delay="3.4s">
-          <div class="step__image">
+        <div class="step  wow fadeInDown" data-wow-delay="0.5s">
+          <div class="step__image step__image-5">
               <img src="img/steps/calendar.png" alt="Выполним работу в срок">
           </div>
           <!-- /.step__image -->
@@ -358,7 +358,7 @@
         </div>
         <!-- /.guarantee__item -->
 
-        <div class="guarantee__item wow fadeInUp" data-wow-delay="0.2s"">
+        <div class="guarantee__item wow fadeInUp" data-wow-delay="0.2s">
           <div class="guarantee__image">
             <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan" alt="Скан документа гарантии стр. 2">
           </div>
@@ -366,7 +366,7 @@
         </div>
         <!-- /.guarantee__item -->
 
-        <div class="guarantee__item wow fadeInUp" data-wow-delay="0.3s"">
+        <div class="guarantee__item wow fadeInUp" data-wow-delay="0.3s">
           <div class="guarantee__image">
             <img src="img/guarantee/guarantee-3.jpg" class="guarantee__scan" alt="Скан документа гарантии стр. 3">
           </div>
@@ -397,16 +397,16 @@
             <!-- /.interview-list__item -->
 
             <li class="interview-list__item">
-              <span class="interview-list__counter">2</span> 
+              <span class="interview-list__counter interview-list__counter-2">2</span> 
               <!-- /.interview-list__couner -->
               <span class="interview-list__text">У Вас новостройка или вторичное жилье?</span> 
               <!-- /.intervier-list__text --></li>
             <!-- /.interview-list__item -->
 
             <li class="interview-list__item">
-              <span class="interview-list__counter">3</span>
+              <span class="interview-list__counter interview-list__counter-3">3</span>
                <!-- /.interview-list__couner -->
-               <span class="interview-list__text">Где находится помещение, в котором будет производиться ремонт?</span> 
+               <span class="interview-list__text interview-list__text-3">Где находится помещение, в котором будет производиться ремонт?</span> 
                <!-- /.intervier-list__text -->
               </li>
             <!-- /.interview-list__item -->
@@ -434,6 +434,7 @@
             <button class="button brif__button">Рассчитать стоимость</button>
             <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
           </form>
+         
         </div>
         <!-- /.brif__form -->
       </div>
@@ -449,21 +450,32 @@
       <span class="modal-dialog__close" id="close">&#10006;</span>
       <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
       <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
-      <form action="mail.php" method="POST" id="modal-form">
+
+      <form class="form" action="mail.php" method="POST" id="modal-form">
         <input type="text" name="username" class="input modal-dialog__input" placeholder="Ваше имя">
         <input type="tel" name="phone" class="input modal-dialog__input phone" placeholder="Ваш телефон">
         <button class="button modal-dialog__button">Узнать стоимость</button>
       </form>
-        <span class="modal-dialog__feedback-text">Или Вы можете перезвонить нам сами по телефону:   <br>  
+
+      <span class="modal-dialog__feedback-text">Или Вы можете перезвонить нам сами по телефону:   <br>  
           <a href="tel:+78182425131" class="modal-dialog__feedback-number">+7 (8182) 42-51-31</a>
-        </span>
+      </span>
     </div>
     <!-- /.modal-dialog -->
   </div>
-  <!-- /.modal -->   
+  <!-- /.modal -->  
+   <div class="message" id="message">
+     <div class="message-dialog">
+      <span class="message-dialog__close" id="message-close">&#10006;</span>
+     <h3 class="message-dialog__tilte" ></h3>
+     </div>
+   </div>
+   <!-- /.message -->
   <div id="top" class="button button-top">
     <img class="button-top__image" src="img/interface/top.png" alt="Вверх">
   </div>
+
+
 
   <div class="footer">
     <div class="map wow fadeInLeft" data-wow-delay="0.1s" id="map"></div>
@@ -486,7 +498,7 @@
             <span class="contacts-list__text">Режим работы:<br><span class="contacts-list__text_bold">с 9:00 до 18:00</span></span>
           </li>
           <li class="contacts-list__item">
-            <span class="contacts-list__icon">
+            <span class="contacts-list__icon contacts-list__icon-3" >
               <img src="img/footer/phone-call-button.png" alt="icon-phone">
             </span>
             <span class="contacts-list__text"> Телефон:<br>
@@ -533,6 +545,10 @@
 
   <!--Карта-->
   <script src="js/map.js"></script>
+
+  <!--Ajax
+  <script src="js/form-ajax.js"></script>--->
+
 
 
 

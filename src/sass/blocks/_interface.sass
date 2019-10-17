@@ -47,6 +47,15 @@ button
     font-size: 16px
     color: #000000
     font-size: 20px
+.form
+  position: relative
+  &__message
+    position: absolute
+    left: 0
+    bottom: 0
+    color: green
+    +bold
+
 input
   border: 1px solid $border-input
   padding: 22px 30px
@@ -73,9 +82,10 @@ div
   .container
     width: 80%
     max-width: 760px
-    
-  
-
+@media (max-width: 991px )
+    .container
+      max-width: 580px
+      width: 80%
 @media (max-width: 768px )
   .container
     max-width: 580px
@@ -91,8 +101,8 @@ div
       height: 15px
 @media (max-width: 320px)
   .container
-    max-width: 280px
-    width: 85%
+    width: 280px
+    margin: auto
   .button
     border-radius: 5px
     &-top

@@ -1,4 +1,14 @@
 $(document).ready(function () {
+const message= document.querySelector('#message');
+const messageClose= document.querySelector('#message-close');
+
+messageClose.addEventListener('click', function(){
+  message.classList.toggle('message_active');
+});
+
+  /*Маска для телефона*/
+  $('.phone').mask('+7 (999) 999-99-99');
+  
   /*Валидация формы */
   $('#offer-form').validate({
     errorElement: "div",
@@ -21,6 +31,25 @@ $(document).ready(function () {
       },
       phone: "Введите номер телефона"
     },
+      submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: $(form).serialize(),
+          success: function (response){
+            message.classList.toggle('message_active');
+            $('.message-dialog__tilte').text(response);
+            $('#offer-form')[0].reset(); 
+          
+        },
+        error: function(jqXHR, textStatus, errorThrow){
+          message.classList.toggle('message_active');
+         $('.message-dialog__tilte').text(jqXHR + " " + textStatus);
+
+        }
+      });
+      return false;
+    }
   });
 
   $('#modal-form').validate({
@@ -43,7 +72,25 @@ $(document).ready(function () {
         maxlength: jQuery.validator.format("Имя не более {0} символов!")
       },
         phone: "Введите номер телефона"
-      }
+      },
+    submitHandler: function(form){
+        $.ajax({
+          type: "POST",
+          url: "mail.php",
+          data: $(form).serialize(),
+          success: function (response){
+            message.classList.toggle('message_active');
+            $('.message-dialog__tilte').text(response);
+            $('#modal-form')[0].reset(); 
+        },
+        error: function(jqXHR, textStatus, errorThrow){
+          message.classList.toggle('message_active');
+          $('.message-dialog__tilte').text(jqXHR + " " + textStatus);
+          
+        }
+      });
+      return false;
+    }
   });
       
   $('#brif-form').validate({
@@ -74,9 +121,25 @@ $(document).ready(function () {
         email: "Введите корректный E-mail"
       },
       phone: "Введите номер телефона"
-    }
+    },
+    submitHandler: function(form){
+      $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(form).serialize(),
+        success: function (response){
+          message.classList.toggle('message_active');
+          $('.message-dialog__tilte').text(response);
+        $('#brif-form')[0].reset(); 
+      },
+      error: function(jqXHR, textStatus, errorThrow){
+        message.classList.toggle('message_active');
+        $('.message-dialog__tilte').text(jqXHR + " " + textStatus);
+      }
+    });
+    return false;
+  }
   });
 
-  /*Маска для телефона*/
-  $('.phone').mask('+7 (999) 999-99-99');
+
 });

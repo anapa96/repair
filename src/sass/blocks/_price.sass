@@ -1,9 +1,9 @@
 .price
-  padding-top: 88px
+  padding-top: 85px
   &__title
     max-width: 550px
     margin: auto
-    margin-bottom: 50px
+    margin-bottom: 49px
   &__subtitle
     margin-bottom: 58px
     text-align: center
@@ -11,7 +11,7 @@
     margin-bottom: 30px
 .card
   text-align: center
-  padding-bottom: 40px
+  padding-bottom: 43px
   border: 1px solid $border-card
   &:hover
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
@@ -20,9 +20,10 @@
       opacity: 1
       transition: 0.2s
   &__text
-    padding-top: 35px
+    padding-top: 37px
   &__title
     margin-top: 0
+    margin-left: 3px
     font-size: 18px
     margin-bottom: 30px
   &__image
@@ -65,27 +66,58 @@
     justify-content: space-between
     flex-wrap: wrap
 @media (max-width: 1200px)
-  .card
-    width: 48%
-@media (max-width: 768px)
   .price
-    padding-top: 45px
-    padding-bottom: 0
+    padding-top: 80px
     &__title
-      margin-bottom: 25px
-      line-height: normal
+      max-width: 350px
+      margin: auto
+      margin-bottom: 49px
+      font-size: 19px
+      line-height: 25px
+      margin-bottom: 20px
     &__subtitle
-    &__card
-      width: auto
-      
+      margin-bottom: 25px
+      font-size: 16px
+      text-align: center
   .card
+    width: 31%
     padding-bottom: 30px
     &__text
-      padding-top: 30px
+      padding-top: 20px
+    &__title
+      font-size: 15px
+      margin-bottom: 20px
+    &__link
+      font-size: 13px
+  
+@media (max-width: 991px)
+  .price
+    padding-top: 47px
+    padding-bottom: 0
+    &__title
+      font-size: 18px
+      margin-bottom: 22px
+      line-height: normal
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 60px
+      line-height: normal
+      padding-right: 18px
+    &__card
+      width: auto
+  .card
+    padding-bottom: 32px
+    &__text
+      padding-top: 31px
     &__title
       margin-top: 0
       font-size: 14px
       margin-bottom: 13px
+    &__link
+      font-size: 16px
     &s
       justify-content: center
+      padding-right: 7px
+      padding-left: 3px
+    
   

@@ -20,9 +20,18 @@
     margin-top: 68px
     display: flex
     justify-content: space-between
-.slider
-  &__image
-       
+@media (max-width: 1200px )
+  .portfolio
+    background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
+    background-size: 50%
+    padding-top: 80px
+    padding-bottom: 80px
+    &__title
+      font-size: 19px
+      margin-bottom: 50px
+      line-height: 25px
+  .owl-nav
+    margin-top: 20px
   
 @media (max-width: 768px )
   .portfolio
