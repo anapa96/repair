@@ -29,11 +29,17 @@ gulp.task('htmlmin', () => {
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('dist/'))
 });
+gulp.task('dist', gulp.series('minify-css', 'move-js', 'minify-js', 'htmlmin'));
+
 /*сжать php*/
 gulp.task('phpmin', () => {
   return gulp.src('src/*.php')
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('dist/'))
+});
+gulp.task('phpmailer', () => {
+  return gulp.src('src/phpmailer/*.php')
+  .pipe(gulp.dest('dist/phpmailer/'))
 });
 
 
@@ -57,6 +63,6 @@ gulp.task('default', function () {
 });
 
 
-gulp.task('dist', gulp.series('minify-css', 'move-js', 'minify-js', 'htmlmin'));
+
 
 
