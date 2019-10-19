@@ -3,13 +3,36 @@ $(document).ready(function(){
   const button=$('#button');
   const modal=$('#modal');
   const close=$('#close');
+
   button.on('click', function(){
     modal.addClass('modal_active');
+    $('body').addClass('body_hidden'); 
   });
   close.on('click', function(){
-    modal.removeClass('modal_active');
+    modal.removeClass('modal_active');  
+    $('body').removeClass('body_hidden');   
   });
 
+  $('#scan-1').on('click', function(){
+    $('#evasion-1').addClass('evasion_active'); 
+    $('body').addClass('body_hidden'); 
+  });
+  
+  $('#scan-2').on('click', function(){
+    $('#evasion-2').addClass('evasion_active');  
+    $('body').addClass('body_hidden'); 
+  });
+  $('#scan-3').on('click', function(){
+    $('#evasion-3').addClass('evasion_active');  
+    $('body').addClass('body_hidden'); 
+  });
+
+  $('.evasion-dialog__close').on('click', function(){
+    $('.evasion').removeClass('evasion_active');
+    $('body').removeClass('body_hidden');   
+  });
+
+  /*Кнопка прокрутки*/
   const top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
   const delay = 1000; // Задержка прокрутки
   $(window).scroll(function () { // При прокрутке попадаем в эту функцию
@@ -23,6 +46,7 @@ $(document).ready(function(){
       scrollTop: 0
     }, delay);
   });
+
 /*подключение wow*/
   const wow =  new WOW({
     mobile: false
@@ -38,8 +62,12 @@ $(document).ready(function(){
         0:{
             items:1
         },
-        768:{
+        320:{
             items:1,
+            margin: 30
+        },
+        768:{
+            items:2,
             margin: 30
         },
         992:{

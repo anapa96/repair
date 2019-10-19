@@ -37,7 +37,7 @@
       margin-right: 10px
   &__input
     width: 240px
-    margin-bottom: 20px
+    margin-bottom: 25px
   &__button
     width: 100%  
     min-height: 70px
@@ -91,6 +91,15 @@ div
       margin-bottom: 20px
     &-feedback
       font-size: 12px
+  div
+    &.invalid-offer
+      width: 100%
+      position: absolute
+      +bold
+      text-align: center
+      color: red
+      bottom: 0
+      font-size: 10px
 @media (max-width: 991px)
   .offer
     background: #fff
@@ -120,7 +129,7 @@ div
     &__button
       font-size: 14px
       padding: 0 40px 0 40px
-      margin-bottom: 22px
+      margin-bottom: 30px
       border-radius: 10px
     &-feedback
       flex-direction: column

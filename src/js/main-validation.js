@@ -4,7 +4,10 @@ const messageClose= document.querySelector('#message-close');
 
 messageClose.addEventListener('click', function(){
   message.classList.toggle('message_active');
+  $('body').removeClass('body_hidden'); 
+  $('#modal').removeClass('modal_active');  
 });
+
 
   /*Маска для телефона*/
   $('.phone').mask('+7 (999) 999-99-99');
@@ -38,14 +41,14 @@ messageClose.addEventListener('click', function(){
           data: $(form).serialize(),
           success: function (response){
             message.classList.toggle('message_active');
+            $('body').addClass('body_hidden'); 
             $('.message-dialog__tilte').text(response);
             $('#offer-form')[0].reset(); 
-          
         },
         error: function(jqXHR, textStatus, errorThrow){
           message.classList.toggle('message_active');
-         $('.message-dialog__tilte').text(jqXHR + " " + textStatus);
-
+            $('.message-dialog__tilte').text(jqXHR + " " + textStatus);
+            $('body').addClass('body_hidden'); 
         }
       });
       return false;
@@ -81,12 +84,13 @@ messageClose.addEventListener('click', function(){
           success: function (response){
             message.classList.toggle('message_active');
             $('.message-dialog__tilte').text(response);
+            $('body').addClass('body_hidden'); 
             $('#modal-form')[0].reset(); 
         },
         error: function(jqXHR, textStatus, errorThrow){
           message.classList.toggle('message_active');
           $('.message-dialog__tilte').text(jqXHR + " " + textStatus);
-          
+          $('body').addClass('body_hidden'); 
         }
       });
       return false;
@@ -130,11 +134,13 @@ messageClose.addEventListener('click', function(){
         success: function (response){
           message.classList.toggle('message_active');
           $('.message-dialog__tilte').text(response);
+          $('body').addClass('body_hidden'); 
         $('#brif-form')[0].reset(); 
       },
       error: function(jqXHR, textStatus, errorThrow){
         message.classList.toggle('message_active');
         $('.message-dialog__tilte').text(jqXHR + " " + textStatus);
+        $('body').addClass('body_hidden'); 
       }
     });
     return false;

@@ -13,6 +13,7 @@
   text-align: center
   padding-bottom: 43px
   border: 1px solid $border-card
+  cursor: pointer
   &:hover
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
     transition: 0.2s
@@ -26,6 +27,7 @@
     margin-left: 3px
     font-size: 18px
     margin-bottom: 30px
+    color: #000000
   &__image
     position: relative
     width: 100%
@@ -64,7 +66,8 @@
   &s
     display: flex
     justify-content: space-between
-    flex-wrap: wrap
+    &__link
+      text-decoration: none
 @media (max-width: 1200px)
   .price
     padding-top: 80px
@@ -80,8 +83,11 @@
       font-size: 16px
       text-align: center
   .card
-    width: 31%
+    width: 40%
     padding-bottom: 30px
+    &s
+      justify-content: space-around
+      flex-wrap: wrap
     &__text
       padding-top: 20px
     &__title
@@ -89,11 +95,10 @@
       margin-bottom: 20px
     &__link
       font-size: 13px
-  
 @media (max-width: 991px)
-  .price
-    padding-top: 47px
-    padding-bottom: 0
+    .price
+      padding-top: 47px
+      padding-bottom: 0
     &__title
       font-size: 18px
       margin-bottom: 22px
@@ -103,6 +108,11 @@
       margin-bottom: 60px
       line-height: normal
       padding-right: 18px
+
+@media (max-width: 768px)
+  .price
+    &__title
+    &__subtitle
     &__card
       width: auto
   .card

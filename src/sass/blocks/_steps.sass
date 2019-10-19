@@ -65,13 +65,15 @@
 
 @media ( max-width: 991px )
   .step
+    flex-basis: 50%
     margin-bottom: 30px
     &::after
       display: none
     &s
       padding-top: 20px
       &-block
-        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
       &__title
         margin-bottom: 23px
         line-height: normal
@@ -90,4 +92,8 @@
         margin-bottom: 26px
       &-5
         margin-bottom: 26px
-  
+@media ( max-width: 768px )
+  .step
+    &s
+      &-block
+        flex-direction: column

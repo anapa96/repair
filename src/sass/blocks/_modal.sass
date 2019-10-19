@@ -6,6 +6,7 @@
   height: 100%
   background-color: rgba(#000, 0.5)
   display: none
+  z-index: 1000
   &_active
     display: flex
   &-dialog
@@ -37,7 +38,7 @@
     &__input
       width: 100%
       padding-left: 25px
-      margin-bottom: 18px
+      margin-bottom: 22px
     &__button
       padding: 26px 0 26px 2px
       margin-top: 12px
@@ -64,6 +65,66 @@
         color: $text-color
         &:hover
           color: $main-color
+.message
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  z-index: 1000
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    max-width: 570px
+    width: 90%
+    min-width: 200px
+    background-color: #fff
+    padding: 50px 100px 50px 100px
+    &__close
+      position: absolute
+      top: 20px
+      right: 20px
+      cursor: pointer
+    &__tilte
+      font-size: 22px
+      line-height: 33px
+      text-align: center
+      +bold
+      margin-left: 5px 
+
+.evasion
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  z-index: 1000
+  &-dialog
+    position: relative
+    margin: auto
+    background-color: #fff
+    padding: 20px
+    &__close
+      position: absolute
+      top: 5px
+      right: 5px
+      cursor: pointer
+    &__image
+  &-scan
+    width: 400px
+  &_active
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+
 
 @media ( max-width: 1200px )
   .modal 
@@ -84,11 +145,15 @@
         &-text
           width: 100%
           font-size: 15px
+  .evasion
+    &-scan
+      width: 350px
+
 @media ( max-width: 768px )
   .modal 
     &-dialog
-      max-width: 80%
-      padding: 5%
+      max-width: 60%
+      padding: 5% 10% 5% 10%
       &__title
         font-size: 15px
         line-height: 20px
@@ -107,8 +172,115 @@
           line-height: 10px
         &-number
           font-size: 18px
-    
+  .evasion
+    &-scan
+@media ( max-width: 650px )
+  .modal
+    &-dialog
+      max-width: 90%  
+@media (max-width: 440px)
+  .message
+    &_active
+    &-dialog
+      padding: 50px 10px 50px 10px
+    &__tilte
+      font-size: 18px
+      line-height: 21px
+      text-align: center
+      +bold
+  .evasion
+    &-dialog
+      &__close
+        top: 5px
+        right: 5px
+    &-scan
+      width: 300px
 
+@media only screen and (max-height: 550px)
+  .modal
+    &_active
+      display: flex
+      justify-content: center
+      align-items: center
+    &-dialog
+      padding: 5% 10% 5% 10%
+      &__close
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      &__title
+        font-size: 12px
+        line-height: 20px
+        margin-bottom: 15px
+        margin-left: 0px 
+      &__subtitle
+        font-size: 11px
+        margin-bottom: 20px
+        margin-left: 0px 
+      &__input
+      &__button
+        margin-top: 0
+        margin-bottom: 10px
+        font-size: 13px
+        font-weight: 400
+      &__feedback
+        &-text
+          width: 100%
+          margin: 0 auto
+          text-align: center
+          font-size: 10px
+          line-height: 12px
+        &-number
+          margin-top: 10px
+          font-size: 18px
+          line-height: 0
+ 
+
+  
+@media only screen and (max-height: 540px)
+  .evasion
+    &-scan
+      width: 300px
+@media only screen and (max-height: 450px)
+  .evasion
+    &-scan
+      width: 200px
+  .modal
+    &-dialog
+      &__feedback
+        display: none
+  .modal
+    &_active
+      display: flex
+      justify-content: center
+      align-items: center
+    &-dialog
+      padding: 20px 50px
+      &__close
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      &__title
+        font-size: 12px
+        line-height: 15px
+        margin-bottom: 10px
+      &__subtitle
+        font-size: 12px
+        margin-bottom: 15px
+        margin-left: 0px 
+      &__input
+        padding: 20px
+        font-size: 10px
+      &__button
+        font-size: 10px
+      &__feedback
+        &-text
+          display: none
+
+
+  
 
   
       

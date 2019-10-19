@@ -49,18 +49,20 @@
     padding-top: 44px
     padding-bottom: 0px
     &__title
-      padding: 70px 0 76px 0
-      width: 257px
-      margin: auto
-      font-size: 18px
-      line-height: 21px
+      padding: 70px 0 76px 0;
+      width: 257px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 21px;
     &-wrapper
       padding-top: 60px
-      flex-direction: column
-      align-items: center
+      flex-wrap: wrap
+      justify-content: space-between
     &__item
-      width: 97%
+      width: 45%
       margin-bottom: 27px
+      &-3
+        margin: auto
     &__text
       left: 18px
       top: 4px
@@ -70,5 +72,14 @@
       &__item
         &:last-child
           margin-bottom: 0
+@media (max-width: 768px)
+  .proffer
+    &__title
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &__item
+      width: 97%
+      margin-bottom: 27px
 
 

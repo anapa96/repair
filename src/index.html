@@ -157,8 +157,10 @@
         <!-- /.section-subtitle price__subtitle -->
 
         <div class="cards">
-
+          
+          
           <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+              <a href="#" class="cards__link">
             <div class="card__image"><img src="img/price/bathroom.jpg"
                 alt="Выполненный нами ремонт ванной комнаты и с/у"></div>
             <!-- /.card__image -->
@@ -169,10 +171,13 @@
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
+          </a>
           </div>
           <!-- /.card -->
-
+          
+         
           <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+              <a href="#" class="cards__link">
             <div class="card__image"><img src="img/price/living.jpg" alt="Выполненный нами ремонт квартиры"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -182,10 +187,13 @@
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
+            </a>
           </div>
           <!-- /.card -->
 
+         
           <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
+              <a href="#" class="cards__link">
             <div class="card__image"><img src="img/price/office.jpg" alt="Выполненный нами ремонт офиса"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -195,11 +203,13 @@
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
+          </a>
           </div>
           <!-- /.card -->
 
-
+         
           <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+              <a href="#" class="cards__link">
             <div class="card__image"><img src="img/price/bildings.jpg" alt="Выполненный нами ремонт новостройки"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -209,10 +219,14 @@
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
+          </a>
           </div>
+          
           <!-- /.card -->
 
+        
           <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
+              <a href="#" class="cards__link">
             <div class="card__image"><img src="img/price/kitchen.jpg" alt="Выполненный нами ремонт кухни"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -222,10 +236,13 @@
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
+            </a>
           </div>
           <!-- /.card -->
-
+          
+          
           <div class="card price__card wow fadeInUp">
+              <a href="#" class="cards__link">
             <div class="card__image"><img src="img/price/hauses.jpg" alt="Выполненный коттеджа"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -235,6 +252,7 @@
               <!-- /.card__link -->
             </div>
             <!-- /.card__text -->
+              </a>
           </div>
           <!-- /.card -->
 
@@ -332,7 +350,7 @@
               наших партнеров для закупки материалов оптом</p>
           </div>
 
-          <div class="proffer__item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="proffer__item proffer__item-3 wow fadeInUp" data-wow-delay="0.3s">
             <div class="proffer__image">
               <img src="img/proffer/proffer-3.jpg" alt="Поможем заказать у проверенных поставщиков">
             </div>
@@ -352,7 +370,7 @@
 
           <div class="guarantee__item wow fadeInUp" data-wow-delay="0.1s">
             <div class="guarantee__image">
-              <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan" alt="Скан документа гарантии стр. 1">
+              <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan" id="scan-1" alt="Скан документа гарантии стр. 1">
             </div>
             <span class="guarantee__text">Гарантия на качество<br> выполняемых работ</span>
           </div>
@@ -360,7 +378,7 @@
 
           <div class="guarantee__item wow fadeInUp" data-wow-delay="0.2s">
             <div class="guarantee__image">
-              <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan" alt="Скан документа гарантии стр. 2">
+              <img src="img/guarantee/guarantee-2.jpg" class="guarantee__scan" id="scan-2" alt="Скан документа гарантии стр. 2">
             </div>
             <span class="guarantee__text">Гарантия на фиксированные цены. Виды работ и цены на них<br> прописаны в
               договоре</span>
@@ -369,7 +387,7 @@
 
           <div class="guarantee__item wow fadeInUp" data-wow-delay="0.3s">
             <div class="guarantee__image">
-              <img src="img/guarantee/guarantee-3.jpg" class="guarantee__scan" alt="Скан документа гарантии стр. 3">
+              <img src="img/guarantee/guarantee-3.jpg" class="guarantee__scan" id="scan-3" alt="Скан документа гарантии стр. 3">
             </div>
             <span class="guarantee__text">Гарантия на точное соблюдение сроков и ответственность за их
               невыполнение</span>
@@ -468,16 +486,45 @@
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
+
   <div class="message" id="message">
     <div class="message-dialog">
       <span class="message-dialog__close" id="message-close">&#10006;</span>
       <h3 class="message-dialog__tilte">123</h3>
     </div>
   </div>
+
   <!-- /.message -->
   <div id="top" class="button button-top">
     <img class="button-top__image" src="img/interface/top.png" alt="Вверх">
   </div>
+
+  <div class="evasion" id="evasion-1">
+    <div class="evasion-dialog ">
+      <span class="evasion-dialog__close" id="close">&#10006;</span>
+        <div class="evasion-dialog__image">
+          <img src="img/guarantee/guarantee-1.jpg" class="evasion-scan" alt="Докумет 'Гарантии'">
+        </div>
+    </div>
+  </div>
+  <div class="evasion" id="evasion-2">
+    <div class="evasion-dialog ">
+      <span class="evasion-dialog__close" id="close">&#10006;</span>
+        <div class="evasion-dialog__image">
+          <img src="img/guarantee/guarantee-2.jpg" class="evasion-scan" alt="Докумет 'Гарантии'">
+        </div>
+    </div>
+  </div>
+  <div class="evasion" id="evasion-3">
+    <div class="evasion-dialog ">
+      <span class="evasion-dialog__close" id="close">&#10006;</span>
+        <div class="evasion-dialog__image">
+          <img src="img/guarantee/guarantee-3.jpg" class="evasion-scan" alt="Докумет 'Гарантии'">
+        </div>
+    </div>
+  </div>
+
+  
 
   <div class="container">
 
