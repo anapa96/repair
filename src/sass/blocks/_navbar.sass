@@ -22,8 +22,14 @@
     text-decoration: none
     margin-top: 6px
     +bold
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     &:hover
       color: $main-color
+@media (max-width: 991px)
+  .navbar
+     &__phone
+      &:hover
+        color: $text-color
 @media (max-width: 921px )
   .navbar
     padding-bottom: 17px
@@ -40,6 +46,7 @@
       margin-right: 3px
     &__logo
       width: 91px
+ 
 
 
 

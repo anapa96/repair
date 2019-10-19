@@ -20,6 +20,11 @@
     .card__image:before
       opacity: 1
       transition: 0.2s
+    .card__link
+      &:after
+        height: 12px
+        z-index: -1
+
   &__text
     padding-top: 37px
   &__title
@@ -50,10 +55,6 @@
     color: $text-color
     font-size: 16px
     position: relative
-    &:hover
-      &:after
-        height: 12px
-        z-index: -1
     &:after
       content: ''
       position: absolute
@@ -69,6 +70,7 @@
     flex-wrap: wrap
     &__link
       text-decoration: none
+      
 @media (max-width: 1200px)
   .price
     padding-top: 80px
@@ -97,18 +99,32 @@
     &__link
       font-size: 13px
 @media (max-width: 991px)
-    .price
-      padding-top: 47px
-      padding-bottom: 0
+  .price
+    padding-top: 47px
+    padding-bottom: 0
     &__title
-      font-size: 18px
+      font-size: 20px
       margin-bottom: 22px
       line-height: normal
     &__subtitle
-      font-size: 14px
+      font-size: 18px
       margin-bottom: 60px
       line-height: normal
       padding-right: 18px
+  .card
+    &:hover
+      box-shadow: none
+      transition: 0s
+      .card__image:before
+        opacity: 0
+        transition: 0s
+      .card__link
+        &:after
+          height: 3px
+          z-index: -1
+
+    
+  
 
 @media (max-width: 768px)
   .price

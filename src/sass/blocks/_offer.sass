@@ -17,14 +17,14 @@
     padding-right: 90px
     position: relative
   &__title
-    max-width: 360px
+    width: 360px
     font-size: 24px
     line-height: 35px
     margin-bottom: 20px
     text-align: left
     color: $text-color
   &__subtitle
-    max-width: 250px
+    width: 250px
     font-size: 16px
     line-height: 20px
     margin-bottom: 29px
@@ -57,6 +57,7 @@
       display: block;
       text-decoration: none
       color: $text-color
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       +bold
       &:hover
         color: $main-color
@@ -72,12 +73,14 @@ div
     bottom: 0
 #offer__input-name
   padding-left: 25px
+
+
 @media (max-width: 1200px)
   .offer
     &-block
       padding-right: 20px
     &__title
-      font-size: 19px
+      font-size: 20px
       line-height: 25px
       margin-bottom: 20px
     &__subtitle
@@ -93,13 +96,7 @@ div
       font-size: 12px
   div
     &.invalid-offer
-      width: 100%
-      position: absolute
-      +bold
-      text-align: center
-      color: red
-      bottom: 0
-      font-size: 10px
+      font-size: 13px
 @media (max-width: 991px)
   .offer
     background: #fff
@@ -109,23 +106,30 @@ div
       padding-right: 0
     &__title
       display: block
-      max-width: 265px
-      font-size: 18px
-      line-height: 22px
-      margin-bottom: 16px
+      width: 380px
+      font-size: 20px
+      line-height: 24px
+      margin: auto
+      margin-bottom: 30px
       margin-top: 18px
+      text-align: center
     &__subtitle
-      font-size: 14px
+      width: 300px
+      font-size: 18px
       line-height: 18px
+      text-align: center
+      margin: auto
       margin-bottom: 25px
     &__form
       padding-right: 3px
+      width: 70%
+      margin: auto
       &-wrapper
         width: 100%
         &:first-child
           margin-bottom: 11px
     &__input
-      margin-bottom: 0px
+      margin-bottom: 20px
     &__button
       font-size: 14px
       padding: 0 40px 0 40px
@@ -136,13 +140,59 @@ div
       padding-left: 9px
       font-size: 15px
       &__text
+        margin: auto
+        text-align: center
+      &__number
+        &:hover
+          color: $text-color
+@media (max-width: 768px)
+  .offer
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      display: block
+      max-width: 265px
+      font-size: 18px
+      line-height: 22px
+      margin-left: 0
+      margin-bottom: 16px
+      margin-top: 18px
+      text-align: left
+    &__subtitle
+      width: 250px
+      font-size: 14px
+      line-height: 18px
+      margin-left: 0
+      margin-bottom: 25px
+      text-align: left
+    &__form
+      width: 100%
+      padding-right: 3px
+      &-wrapper
+        width: 100%
+        &:first-child
+          margin-bottom: 11px
+    &__button
+      font-size: 14px
+      padding: 0 40px 0 40px
+      margin-bottom: 30px
+      border-radius: 10px
+    &-feedback
+      flex-direction: column
+      padding-left: 9px
+      font-size: 15px
+    
+      &__text
+        margin-left: 0
+        text-align: left
         &:first-child
           margin-bottom: 7px
         &:last-child
           margin-left: -2px
-  div
-  &.invalid-offer
-    font-size: 10px
+      &__number
+        &:hover
+          color: $text-color
 
 
 

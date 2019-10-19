@@ -18,16 +18,18 @@ button
   padding: 17px 30px 17px 30px 
   +bold
   &-top
-    bottom: 0;
-    padding: 10px
-    max-width: 20%
-    cursor: pointer;
-    display: none;
-    position: fixed;
-    left: 0
+    bottom: 10px
+    left: 10px
+    cursor: pointer
+    display: none
+    position: fixed
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     &__image
       display: block
       margin: 0 auto
+      width: 50px
+      &:active
+        outline: none
   &:hover
     background-color: lighten($main-color, 10%)
     cursor: pointer
@@ -74,10 +76,12 @@ input.invalid
   border: 1px solid red
 div
   &.invalid
-    margin-top: -21px
-    margin-bottom: 8px
+    position: absolute
+    width: 100%
+    text-align: center
     +bold
     color: red
+    bottom: 0
     text-align: center
 
 
@@ -85,44 +89,30 @@ div
   .container
     width: 80%
     max-width: 760px
-div
-  &.invalid
-    margin-top: -18px
-    +bold
-    color: red
-    text-align: center
-    font-size: 15px
-@media ( max-width: 1200px  )
   div
-  &.invalid
-    font-size: 12px
+    &.invalid
+      font-size: 13px
   
 @media (max-width: 991px )
-    .container
-      max-width: 580px
-      width: 80%
+  .button
+    &:hover 
+      background-color: $main-color
 @media (max-width: 768px )
   .container
     max-width: 580px
     width: 80%
+@media (max-width: 500px)
   .button
     &-top
-      padding: 5px
-      max-width: 9%
-  div
-    &.invalid
-      margin-top: -10px
-      font-size: 10px
-      height: 15px
+      bottom: 0px
+      left: 0px
+      &__image
+        width: 40px
+
 @media (max-width: 320px)
   .container
     width: 280px
     margin: auto
-  .button
-    border-radius: 5px
-    &-top
-      padding: 5px
-      max-width: 9%
   .section
     padding: 30px 0
     &-title

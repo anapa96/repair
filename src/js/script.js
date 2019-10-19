@@ -66,7 +66,7 @@ $(document).ready(function(){
             items:1,
             margin: 30
         },
-        768:{
+        769:{
             items:2,
             margin: 30
         },
